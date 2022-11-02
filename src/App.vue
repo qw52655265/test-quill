@@ -7,9 +7,12 @@
       <el-form-item label="Text2">
         <quill-editor v-model="form.text2" />
       </el-form-item>
-      <!-- 这里使用了v-if，动态生成的编辑器工具类有bug， -->
-      <el-form-item v-show="isShow" label="Text3">
+      <el-form-item v-show="isShow" label="Text4">
         <quill-editor v-model="form.text3" />
+      </el-form-item>
+      <!-- 这里使用了v-if，动态生成的编辑器工具类有bug， -->
+      <el-form-item v-if="isShow" label="Text4">
+        <quill-editor v-model="form.text4" />
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="isShow = !isShow">
@@ -32,6 +35,7 @@ export default {
         text1: "text1",
         text2: "text2",
         text3: "text3",
+        text4: "text4",
       },
       isShow: false,
     });
