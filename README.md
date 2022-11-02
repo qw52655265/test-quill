@@ -1,3 +1,3 @@
 # test-quill
 
-![](./scr/assets/quill-bug.png)
+![bug](./scr/assets/quill-bug.png)
